@@ -19,6 +19,7 @@ public class MyBotService implements BotService {
 
     @Override
     public void onUpdateReceived(Update update) {
+        sendMessage.setText("Hello, this is a test message from MyBotService!");
         log.info("Received update: {}", update.getUpdateId());
     }
 }
